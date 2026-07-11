@@ -2,7 +2,6 @@
   "name": "pcs-recharge-site",
   "version": "1.0.0",
   "description": "Site pour automatiser la réception de codes PCS",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
