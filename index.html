@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recharge PCS - Soutien</title>
+    <title>My Sadaqa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="brand">
+                <span class="brand-sub">My</span><span class="brand-pcs">Sadaqa</span>
+            </div>
+            <a href="https://www.recharge.fr/carte-pcs" target="_blank" class="nav-cta">Recharger</a>
+        </div>
+    </nav>
+
     <div class="container">
         <header>
             <p class="salam">As-salamu alaykum wa rahmatullahi wa barakatuh</p>
-            <h1>Soutien - Recharge PCS</h1>
+            <h1>Faire une Sadaqa</h1>
             <p class="subtitle">BaarakaAllahu fik pour votre générosité</p>
         </header>
 
         <section class="intro">
             <div class="intro-content">
                 <p class="intro-text">
-                    Si vous êtes sur cette page, c'est que vous avez vu l'une de mes vidéos. 
-                    Je vous remercie déjà par avance pour votre intention de m'aider. 
+                    Si vous êtes sur cette page, c'est que vous avez vu l'une de mes vidéos.
+                    Je vous remercie déjà par avance pour votre intention de m'aider.
                     Qu'Allah vous récompense pour votre générosité.
                 </p>
                 <p class="intro-text">
-                    Pourquoi la recharge PCS ? C'est le moyen le plus simple et rapide pour nous en prison. 
-                    Les mandats classiques sont trop contrôlés et mettent beaucoup trop de temps à être crédités. 
-                    Tout le monde ici passe par PCS car c'est instantané et sans tracasseries administratives.
+                    Pourquoi la recharge PCS ? Possèdant une carte PCS, c'est le moyen le plus simple et rapide pour utiliser l'argent de manière instantanée.
+    
                 </p>
                 <p class="intro-text">
-                    Voici les étapes pour m'envoyer une recharge :
+                    Voici les étapes pour faire la sadaqa :
                 </p>
             </div>
         </section>
 
         <section class="instructions">
             <h2>Comment m'aider ?</h2>
-            
+
             <div class="method recommended">
                 <div class="method-icon">💳</div>
                 <div class="method-content">
                     <div class="recommendation-badge">Recommandé</div>
                     <h3>Option 1 : Recharge.fr (carte bancaire)</h3>
-                    <p>Le plus simple et rapide. Connectez-vous sur <a href="https://www.recharge.fr/carte-pcs" target="_blank">recharge.fr</a> et achetez une recharge PCS avec votre carte bancaire. Instantané et sans déplacement.</p>
+                    <p>Le plus simple et rapide. Cliquez sur <a href="https://www.recharge.fr/carte-pcs">recharge.fr</a> et achetez une recharge PCS avec votre carte bancaire. Instantané et sans déplacement.</p>
+                
                 </div>
             </div>
 
@@ -56,7 +68,7 @@
                 <h3>Étapes à suivre :</h3>
                 <ol>
                     <li>Achetez une recharge PCS (10€, 15€, 20€, 50€, etc.)</li>
-                    <li>Vous recevrez un code à 12 chiffres</li>
+                    <li>Vous recevrez un code</li>
                     <li>Entrez ce code ci-dessous</li>
                     <li>Cliquez sur "Envoyer"</li>
                 </ol>
@@ -68,13 +80,14 @@
             <form id="codeForm">
                 <div class="form-group">
                     <label for="code">Code PCS :</label>
-                    <input 
-                        type="text" 
-                        id="code" 
-                        name="code" 
-                        placeholder="Ex: 1C29A1F547" 
-                        maxlength="12"
-                        pattern="[A-Za-z0-9]{10,12}"
+                    <input
+                        type="text"
+                        id="code"
+                        name="code"
+                        placeholder="Ex: M1C29A1F547"
+                        maxlength="10"
+                        minlength="10"
+                        pattern="[Mm][A-Za-z0-9]{9,11}"
                         required
                     >
                 </div>
@@ -84,7 +97,7 @@
         </section>
 
         <footer>
-            <p>JazakAllahu khayran pour votre soutien - Qu'Allah vous récompense</p>
+            <p>JazakAllahu khayran pour votre soutien. Qu'Allah vous récompense</p>
         </footer>
     </div>
 

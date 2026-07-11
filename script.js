@@ -5,9 +5,16 @@ document.getElementById('codeForm').addEventListener('submit', async (e) => {
     const messageDiv = document.getElementById('message');
     const submitBtn = document.querySelector('.submit-btn');
     
-    // Validation du code (doit être entre 10 et 12 caractères alphanumériques)
-    if (!/^[A-Z0-9]{10,12}$/.test(code)) {
-        messageDiv.textContent = 'Le code doit contenir entre 10 et 12 caractères (lettres et chiffres).';
+    // Validation : le code doit obligatoirement commencer par la lettre M
+    if (!code.startsWith('M')) {
+        messageDiv.textContent = 'Code invalide : le code PCS est invalide.';
+        messageDiv.className = 'message error';
+        return;
+    }
+
+    // Validation du format (M suivi de 9 à 11 caractères alphanumériques)
+    if (!/^M[A-Z0-9]{9,11}$/.test(code)) {
+        messageDiv.textContent = 'Code invalide : format incorrect.';
         messageDiv.className = 'message error';
         return;
     }
