@@ -24,7 +24,7 @@ document.getElementById('codeForm').addEventListener('submit', async (e) => {
     submitBtn.textContent = 'Envoi en cours...';
     
     try {
-        const response = await fetch('/api/send-code.js', {
+        const response = await fetch('/api/send-code', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
