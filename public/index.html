@@ -69,13 +69,18 @@
                 <ol>
                     <li>Achetez une recharge PCS (10€, 15€, 20€, 50€, etc.)</li>
                     <li>Vous recevrez un code</li>
-                    <li>Envoyez ce code par email à <a href="mailto:fivedailyprayers@icloud.com">fivedailyprayers@icloud.com</a></li>
-    
+                   <li>Envoyez ce code par email à <button onclick="copyEmail()">Copier l'adresse</button>
+
+<script>
+function copyEmail() {
+  navigator.clipboard.writeText("fivedailyprayers@icloud.com");
+}
+</script></li>
                 </ol>
             </div>
         </section>
 
-     
+        
 
         <footer>
             <p>JazakAllahu khayran pour votre soutien. Qu'Allah vous récompense</p>
